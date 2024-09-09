@@ -59,4 +59,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     // Call function to check URL when the page loads
     checkURLForName();
+    document.getElementById("resumeForm").style.display="block";
+ document.getElementById("resume").style.display="block"
 });
+function printCV(){
+    document.getElementById("resumeForm").style.display="none";
+     document.getElementById("resume").style.display="block"
+    window.print();
+}
+printCV();

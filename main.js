@@ -67,4 +67,4 @@ function printCV(){
      document.getElementById("resume").style.display="block"
     window.print();
 }
-printCV();
+

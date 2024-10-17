@@ -13,7 +13,6 @@ body {
 .mainn{
     max-width: 800px;
     margin: 0 auto;
-    background-image: url(https://th.bing.com/th/id/OIF.NB9fiwe0yRMPccLGAI1BGQ?rs=1&pid=ImgDetMain);
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -45,15 +44,16 @@ input[type="file"]{
     margin-top: 20px;
 
 }
-input[type="file"]::file-selector-button{
-    background-color:#92140c;
+button{
     cursor: pointer;
     font-size: large;
-    color: white;
+    color:#92140c;
+    background-color: #eb8981;
     border-color: #92140c;
     border-radius: 10px;
+    padding-bottom: 20px;
 }
-input[type="file"]::file-selector-button:hover{
+hover{
     background-color: #c2ad8194;
 }
 input[type="submit"]{
@@ -64,6 +64,7 @@ input[type="submit"]{
     font-size: x-large;
     padding-bottom: 20px;
 }
+
 form {
     margin-bottom: 40px;
 }
@@ -79,7 +80,7 @@ input, textarea {
     
 }
 
-#resume{
+#resume-contect {
         max-width: 800px;
         margin: 0 auto;
         padding: 20px;
@@ -101,6 +102,12 @@ h2, p {
     margin: 10px 0;
 }
 
+h1{
+    color: #92140c;
+    font-size: small;
+    text-align: center;
+}
+
 img {
     max-width: 150px;
     border-radius: 50%;
@@ -113,16 +120,26 @@ img {
 
 }
 .buttonprint{
-    color: white;
-    border-radius: 10px;
-    background-color: #92140c;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 150px;
-    margin-left: 600px;
-    height: 50px;
+    margin-left: 650px;
+}
+#sharee{
+    color: #92140c;
+    text-align: center;
 }
 
+
+#generatedResume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #92140c;
+    padding: 20px;
+    font-size: x-large;
+    border-radius: 8px;
+    background-image: url(https://i.pinimg.com/736x/1d/3b/91/1d3b9104c9214dd258807cdd8d3192b8.jpg);
+}
 @media (max-width: 600px) {
     /* Adjusting padding and font size for smaller screens */
     body {
@@ -158,8 +175,9 @@ img {
         margin-bottom: 20px;
         margin-left: -3px;
     }
+
     .buttonprint{
         margin-left: 100px;
+        
     }
-
 }

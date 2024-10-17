@@ -101,6 +101,9 @@ function printCV(){
      document.getElementById("buttonpdf").style.display="none";
      document.getElementById("h1idd","milehead").style.display="none";
      document.getElementById("milehead").style.display="none";
+     document.getElementById("addSkillBtn").style.display="none";
+     document.getElementById("addExperienceBtn").style.display="none";
+     document.getElementById("addEducationBtn").style.display="none";
      
 
     window.print();

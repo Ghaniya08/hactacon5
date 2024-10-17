@@ -126,7 +126,11 @@ img {
     color: #92140c;
     text-align: center;
 }
-
+#shareableLinkSection{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
 #generatedResume {
     max-width: 800px;
@@ -180,4 +184,5 @@ img {
         margin-left: 100px;
         
     }
+    
 }

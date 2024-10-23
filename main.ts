@@ -1,150 +1,186 @@
-    document.getElementById('generateBtn')?.addEventListener('click', function () {
-        const picture = (document.getElementById('picture') as HTMLInputElement)?.files?.[0];
-        const name = (document.getElementById('name') as HTMLInputElement).value;
-        const phone = (document.getElementById('phone') as HTMLInputElement).value;
-        const email = (document.getElementById('email') as HTMLInputElement).value;
-        const address = (document.getElementById('address') as HTMLTextAreaElement).value;
-        const skills = (document.getElementById('skills') as HTMLInputElement).value;
-        const education = (document.getElementById('education') as HTMLTextAreaElement).value;
-        const experience = (document.getElementById('experience') as HTMLTextAreaElement).value;
-    
-        let pictureURL = '';
-        if (picture) {
-            pictureURL = URL.createObjectURL(picture);
+document.addEventListener('DOMContentLoaded' , ()=>{
+    const toggleButton = document.getElementById("toggle-skills") as HTMLButtonElement;
+    const skillsSection = document.getElementById("skills") as HTMLElement;
+      toggleButton.addEventListener('click',()=>{
+        if (skillsSection.style.display === 'none'){
+          skillsSection.style.display = 'block';
+        } else {
+          skillsSection.style.display = 'none';
         }
-    
-        // Generate the resume content
-        const generatedResume = `
-            <div>
-                <h2>${name}</h2>
-                <img src="${pictureURL}" alt="Profile Picture" width="100" height="100"><br>
-                <strong>Phone:</strong> ${phone}<br>
-                <strong>Email:</strong> ${email}<br>
-                <strong>Address:</strong> ${address}<br><br>
-                <strong>Skills:</strong> <div id="skillsList">${skills}</div><br>
-                <button id="addSkillBtn">Add More Skills</button>
-                <div id="additionalSkills"></div><br>
-                <strong>Education:</strong> <div id="educationList">${education}</div><br>
-                <button id="addEducationBtn">Add More Education</button>
-                <div id="additionalEducation"></div><br>
-                <strong>Experience:</strong> <div id="experienceList">${experience}</div><br>
-                <button id="addExperienceBtn">Add More Experience</button>
-                <div id="additionalExperience"></div><br>
-            </div>
-        `;
-    
-        // Insert generated resume into the DOM
-        (document.getElementById('generatedResume') as HTMLElement).innerHTML = generatedResume;
-    
-        // Add event listeners after the DOM has been updated with the generated content
-    
-        // Event Listener for Adding More Skills
-        document.getElementById('addSkillBtn')?.addEventListener('click', function () {
-            const additionalSkillsDiv = document.getElementById('additionalSkills');
-            const newSkillInput = document.createElement('input');
-            newSkillInput.type = 'text';
-            newSkillInput.placeholder = 'Additional Skill';
-            additionalSkillsDiv?.appendChild(newSkillInput);
-    
-            // Add a listener to update the skills list when a new skill is added
-            newSkillInput.addEventListener('change', function () {
-                const skillsList = document.getElementById('skillsList');
-                if (skillsList) {
-                    skillsList.innerHTML += `<br>${newSkillInput.value}`;
-                }
-            });
-        });
-    
-        // Event Listener for Adding More Education
-        document.getElementById('addEducationBtn')?.addEventListener('click', function () {
-            const additionalEducationDiv = document.getElementById('additionalEducation');
-            const newEducationInput = document.createElement('textarea');
-            newEducationInput.placeholder = 'Additional Education';
-            additionalEducationDiv?.appendChild(newEducationInput);
-    
-            // Add a listener to update the education list when a new education is added
-            newEducationInput.addEventListener('change', function () {
-                const educationList = document.getElementById('educationList');
-                if (educationList) {
-                    educationList.innerHTML += `<br>${newEducationInput.value}`;
-                }
-            });
-        });
-    
-        // Event Listener for Adding More Experience
-        document.getElementById('addExperienceBtn')?.addEventListener('click', function () {
-            const additionalExperienceDiv = document.getElementById('additionalExperience');
-            const newExperienceInput = document.createElement('textarea');
-            newExperienceInput.placeholder = 'Additional Experience';
-            additionalExperienceDiv?.appendChild(newExperienceInput);
-    
-            // Add a listener to update the experience list when a new experience is added
-            newExperienceInput.addEventListener('change', function () {
-                const experienceList = document.getElementById('experienceList');
-                if (experienceList) {
-                    experienceList.innerHTML += `<br>${newExperienceInput.value}`;
-                }
-            });
-        });
+      })
+     }
+)
 
-    const baseURL = window.location.origin + window.location.pathname; // Get base URL + path
-    const shareableURL = `${baseURL}?name=${encodeURIComponent(name)}`;
 
-    // Display the shareable link
-    const shareableLinkElement = document.getElementById('shareableLink') as HTMLAnchorElement;
-    shareableLinkElement.href = shareableURL;
-    shareableLinkElement.textContent = shareableURL;
+document.getElementById('generateBtn')?.addEventListener('click', function () {
+    const picture = (document.getElementById('picture') as HTMLInputElement)?.files?.[0];
+    const name = (document.getElementById('name') as HTMLInputElement).value;
+    const work = (document.getElementById('work') as HTMLInputElement).value;
+    const phone = (document.getElementById('phone') as HTMLInputElement).value;
+    const email = (document.getElementById('email') as HTMLInputElement).value;
+    const linkdin = (document.getElementById('linkedin') as HTMLInputElement).value;
+    // const address = (document.getElementById('address') as HTMLTextAreaElement).value;
+    const skills = (document.getElementById('skill') as HTMLInputElement).value;
+    const age = (document.getElementById('age') as HTMLInputElement).value;
+    // const education = (document.getElementById('hsc') as HTMLTextAreaElement).value;
+    // const experience = (document.getElementById('ssc') as HTMLTextAreaElement).value;
+    const genderInput = document.querySelector('input[name="gender"]:checked') as HTMLInputElement;
+    const gender = genderInput ? genderInput.value : 'Not specified';
+    const metriatInput = document.querySelector('input[name="metriat"]:checked') as HTMLInputElement;
+    const metriat = metriatInput ? metriatInput.value : 'Not specified';
+    const dobb = (document.getElementById("dob") as HTMLInputElement).value;
+    const city = (document.getElementById("city") as HTMLSelectElement).value;
+    const province = (document.getElementById("province") as HTMLSelectElement).value;
+    const yearofexp = (document.getElementById('expyear') as HTMLInputElement).value;
+    const feild = (document.getElementById('indystryy') as HTMLInputElement).value;
+    const qualication = (document.getElementById('qualification') as HTMLInputElement).value;
+    const hsc = (document.getElementById('hsc') as HTMLInputElement).value;
+    const yearhsc = (document.getElementById('hscYear') as HTMLInputElement).value;
+    const ssc = (document.getElementById('ssc') as HTMLInputElement).value;
+    const yearssc = (document.getElementById('sscYear') as HTMLInputElement).value;
+    const courname = (document.getElementById('coc') as HTMLInputElement).value;
+    const courinst = (document.getElementById('cocInstitute') as HTMLInputElement).value;
+    const coyear = (document.getElementById('cocYear') as HTMLInputElement).value;
 
-    // Show the link section
-    const shareableLinkSection = document.getElementById('shareableLinkSection') as HTMLElement;
-    shareableLinkSection.style.display = 'block';
-});
-
-// Handle loading the resume from the shared link
-window.addEventListener('load', function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const nameParam = urlParams.get('name');
-    
-    // Check if the "name" parameter is present in the URL
-    if (nameParam) {
-        const decodedName = decodeURIComponent(nameParam);
-        const picture = (document.getElementById('picture') as HTMLInputElement)?.files?.[0];
-        const name = (document.getElementById('name') as HTMLInputElement).value;
-        const phone = (document.getElementById('phone') as HTMLInputElement).value;
-        const email = (document.getElementById('email') as HTMLInputElement).value;
-        const address = (document.getElementById('address') as HTMLTextAreaElement).value;
-        const skills = (document.getElementById('skills') as HTMLInputElement).value;
-        const education = (document.getElementById('education') as HTMLTextAreaElement).value;
-        const experience = (document.getElementById('experience') as HTMLTextAreaElement).value;
-        let pictureURL = '';
-        if (picture) {
-            pictureURL = URL.createObjectURL(picture);
-        }
-    
-
-        // Display the resume with the name from the URL
-        const aftershare = `
-            <div>
-                <h2>${decodedName}</h2>
-                <h2>${name}</h2>
-                <img src="${pictureURL}" alt="Profile Picture" width="100" height="100"><br>
-                <strong>Phone:</strong> ${phone}<br>
-                <strong>Email:</strong> ${email}<br>
-                <strong>Address:</strong> ${address}<br><br>
-                <strong>Skills:</strong> <div id="skillsList">${skills}</div><br>
-                <button id="addSkillBtn">Add More Skills</button>
-                <div id="additionalSkills"></div><br>
-                <strong>Education:</strong> <div id="educationList">${education}</div><br>
-                <button id="addEducationBtn">Add More Education</button>
-                <div id="additionalEducation"></div><br>
-                <strong>Experience:</strong> <div id="experienceList">${experience}</div><br>
-                <button id="addExperienceBtn">Add More Experience</button>
-                <div id="additionalExperience"></div><br>
-            </div>
-        `;
-
-        (document.getElementById('shareableLinkSection') as HTMLElement).innerHTML = aftershare;
+    let pictureURL = '';
+    if (picture) {
+        pictureURL = URL.createObjectURL(picture);
     }
 
-    });
+    const generatedResume = `
+        <div>
+        <div class="maindivforall">
+        <div class="formain">
+            <div class="headings">
+            <img src="${pictureURL}" alt="" class="forpic">
+            <div class="forheadings">
+            <h3>${name}</h3>
+            <h1 class="h1dev"><span>${work}</span></h1>
+            <h6 class="paraformetsss">Hello, I'm ${name} , a highly motivated and experienced ${work} with ${yearofexp} years of expertise in ${feild}. I possess a strong foundation in ${qualication} from ${hsc}. You can reach me at ${phone} or ${email}.I am eager to apply my technical skills and learnings in real-world projects, while continuously expanding my knowledge in cutting-edge technologies. Known for my adaptability, quick learning, and dedication to achieving excellence in both academics and technical pursuits.</h6>
+            </div>
+            </div>
+            <div class="contact-info">
+               <p class="contact-label">Email:</p>
+                    <p class="contact-detail"><a href="mailto:${email}">${email}</a></p>
+        
+                <p class="contact-label">LinkedIn:</p>
+                    <p class="contact-detail"><a href="${linkdin}" target="_blank">${linkdin}</a></p>
+        
+                <p class="contact-label">Phone:</p>
+                    <p class="contact-detail"><a href="tel:${phone}">${phone}</a></p>
+            </div>
+        </div>
+
+
+        <div class="others">
+            <div>
+                <div class="Profile">
+                    <h1>Profile</h1>
+                    <h2>Hello, I'm ${name} , a highly motivated and experienced ${work} with ${yearofexp} years of expertise in ${feild}. I possess a strong foundation in ${qualication} from ${hsc}. You can reach me at ${phone} or ${email}.I am eager to apply my technical skills and learnings in real-world projects, while continuously expanding my knowledge in cutting-edge technologies. Known for my adaptability, quick learning, and dedication to achieving excellence in both academics and technical pursuits.</h2>
+                </div>
+                <hr>
+                <div class="personalinfo">
+                    <h1 >Personal Information</h1>
+                    <ul>
+                        <li> Age: ${age}</li> 
+                        <li>Date of Birth: ${dobb}</li>
+                        <li>Nationaltiy: Pakistani</li>
+                        <li>Gender: ${gender}</li>
+                        <li>Metriat status: ${metriat}</li>
+                        <li>Province: ${province}</li>
+                        <li>City: ${city}</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="contact">
+                    <h1 >Contact me</h1>
+                    <ul>
+                        <li><pre><i class="fa-solid fa-phone"></i>  ${phone}</pre></li> 
+                        <li><pre><i class="fa-solid fa-paper-plane"></i> ${email}</pre></li>
+                        <li><pre><i class="fa-solid fa-house-chimney"></i>  Pakistan</pre></li>
+                        <li><pre><i class="fa-solid fa-house-chimney"></i>  ${city}</pre></li>
+                    </ul>
+                </div>
+            </div>
+           
+           <div>
+            <div class="education">
+                <h1>Education & Learning</h1>
+                <h2>Higher Secondary Certificate </h2>
+                <ul>
+                    <li>${hsc}</li>
+                    <li>${yearhsc}</li>
+                </ul>
+                <hr>
+                <h2>Secondary School Certificate</h2>
+                <ul>
+                    <li>${ssc}</li>
+                    <li>${yearssc}</li>
+                </ul>
+                <hr>
+                <h2>Certifications or Courses:</h1>
+                <ul>
+                <li>${courname}</li>
+                <li>From : ${courinst}</li>
+                <li>${coyear}</li>
+            </ul>
+            <hr>
+            </div>
+            <div id="skills" class="skills">
+                <h1>Skills</h1>
+               <div class="ullllll">
+                <div>
+                  <ul id="skillsList">
+                        <li>${skills}</li>
+                    </ul>
+                    <button id="showSkillInputBtn">Add Skill</button><br>
+                    <div id="newSkillContainer" style="display: none;">
+                        <input type="text" id="newSkillInput" placeholder="Enter new skill"><br><br>
+                        <button id="addSkillBtn">Add</button>
+                </div>
+                
+               </div>
+               
+               </div>
+           </div>
+        </div>
+    </div>
+           
+            
+        </div>
+    `;
+
+    (document.getElementById('generatedResume') as HTMLElement).innerHTML = generatedResume;
+
+
+    const showSkillButton = document.getElementById('showSkillInputBtn');
+    const newSkillContainer = document.getElementById('newSkillContainer') as HTMLElement;
+
+    if (showSkillButton) {
+        showSkillButton.addEventListener('click', function () {
+            showSkillButton.style.display = 'none'; 
+            newSkillContainer.style.display = 'block';
+        });
+    }
+    const addSkillButton = document.getElementById('addSkillBtn');
+    if (addSkillButton) {
+        addSkillButton.addEventListener('click', function () {
+            addNewSkill(showSkillButton, newSkillContainer);
+        });
+    }
+});
+function addNewSkill(showSkillButton: HTMLElement, newSkillContainer: HTMLElement) {
+    const newSkillInput = document.getElementById('newSkillInput') as HTMLInputElement;
+    const newSkill = newSkillInput.value;
+
+    if (newSkill.trim()) {
+        const skillsList = document.getElementById('skillsList');
+        const newSkillItem = document.createElement('li');
+        newSkillItem.textContent = newSkill;
+        skillsList?.appendChild(newSkillItem);
+        newSkillInput.value = '';
+        newSkillContainer.style.display = 'none';
+        showSkillButton.style.display = 'block';
+    }
+}
 

@@ -614,11 +614,19 @@ input[type="date" ]{
     margin-left: 50px;}
 .genor{
     margin-left: 50px;}
-.mainnav{
-    width: 355px;
+.mainnav {
+    width: auto;
+    overflow: hidden;
+}
+.mainnav .navv{
+    width: auto;
     position: fixed;
     padding-right: -30px;
-    gap: 10px;}
+    gap: 10px;
+    padding-left: 20px;
+    overflow: hidden;
+    
+}
 .mainnav .navv h1{  
     font-size: 15px;
     margin-top: 35px;}

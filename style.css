@@ -94,7 +94,7 @@ html{
     margin-top:120px;
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
     color: purple;
 }
 .contact-info {
@@ -604,43 +604,32 @@ textarea{
 }
 select{
     font-size: 8px;
-    padding: 10px; 
-}
+    padding: 10px; }
 input[type="file"]::file-selector-button{
-    font-size: 9px;
-}
+    font-size: 9px;}
 input[type="date" ]{
    font-size: 8px;
-   padding-bottom: 15px;
-}
+   padding-bottom: 15px;}
 #buttonpdf{
-    margin-left: 50px;
-}
+    margin-left: 50px;}
 .genor{
-    margin-left: 50px;
-}
+    margin-left: 50px;}
 .mainnav{
     width: 355px;
     position: fixed;
     padding-right: -30px;
-    gap: 10px;
-}
+    gap: 10px;}
 .mainnav .navv h1{  
     font-size: 15px;
-    margin-top: 35px;
-}
-
+    margin-top: 35px;}
 .mainnav .navv ul{
     display: flex;
     gap:10px;
     font-size: 13px;
-    margin-top: 35px;
-}
+    margin-top: 35px;}
 .headings img{
     width: 100px;
-    height: 100px;
-<<<<<<< HEAD
-}
+    height: 100px;}
 .paraforme{
     font-size: 9px;
     padding-top: 18px;
@@ -649,38 +638,12 @@ input[type="date" ]{
     margin-top: -70px;
     margin-left: -50px;
     color: purple;
-    margin-right: -60px ;
-}
+    margin-right: -60px ;}
 .paraformetsss{
     margin-left:-100px;
     margin-top:100px;
     font-size: 9px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    color: purple;
+    color: purple;}
 }
-
-}
-=======
-}
-.paraforme{
-    font-size: 9px;
-    padding-top: 18px;
-    padding: 90px;
-    padding-left: 0px;
-    margin-top: -70px;
-    margin-left: -50px;
-    color: purple;
-    margin-right: -60px ;
-}
-.paraformetsss{
-    margin-left:-100px;
-    margin-top:100px;
-    font-size: 9px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    color: purple;
-}
-
-}
->>>>>>> 4237f28c85daa0888262de29831f5a988f4345b5

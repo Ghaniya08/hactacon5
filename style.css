@@ -639,6 +639,7 @@ input[type="date" ]{
 .headings img{
     width: 100px;
     height: 100px;
+<<<<<<< HEAD
 }
 .paraforme{
     font-size: 9px;
@@ -660,3 +661,26 @@ input[type="date" ]{
 }
 
 }
+=======
+}
+.paraforme{
+    font-size: 9px;
+    padding-top: 18px;
+    padding: 90px;
+    padding-left: 0px;
+    margin-top: -70px;
+    margin-left: -50px;
+    color: purple;
+    margin-right: -60px ;
+}
+.paraformetsss{
+    margin-left:-100px;
+    margin-top:100px;
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: purple;
+}
+
+}
+>>>>>>> 4237f28c85daa0888262de29831f5a988f4345b5

@@ -86,4 +86,8 @@ function printCV(){
      document.getElementById("generatedResume").style.display="block";
 
     window.print();
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4237f28c85daa0888262de29831f5a988f4345b5

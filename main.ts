@@ -182,4 +182,9 @@ function addNewSkill(showSkillButton: HTMLElement, newSkillContainer: HTMLElemen
         newSkillContainer.style.display = 'none';
         showSkillButton.style.display = 'block';
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 4237f28c85daa0888262de29831f5a988f4345b5

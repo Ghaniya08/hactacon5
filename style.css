@@ -620,12 +620,9 @@ input[type="date" ]{
 }
 .mainnav .navv{
     width: auto;
-    position: fixed;
     padding-right: -30px;
     gap: 10px;
     padding-left: 20px;
-    overflow: hidden;
-    
 }
 .mainnav .navv h1{  
     font-size: 15px;

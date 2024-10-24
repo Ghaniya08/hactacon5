@@ -1,54 +1,245 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Resume</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <title>Resume</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/adf88e8f65.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="heading"><strong>Milestone 4 Dynamic Resume Builder</strong></div>
-    <div class="mainn">
+    <div class="mainnav" id="toppnav">
+        <nav class="navv">
+            <h1>Ghaniya Khan</h1>
+            <ul>
+                <li><a href="#okok" style="color: white; text-decoration: none;">My Resume</a></li>
+                <li> <a href="#h1make" style="color: white; text-decoration: none;">Genorate your </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="maindivforall" id="okok">
+        <div class="formain">
+            <div class="headings">
+            <img src="forimg/imgg.jpg" alt="" class="forpic">
+            <div class="forheadings">
+            <h1>𝙶𝚑𝚊𝚗𝚒𝚢𝚊 𝚔𝚑𝚊𝚗</h1>
+            <h1 class="h1dev"><span>𝚆𝚎𝚋 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛</span></h1>
+            <h6 class="paraforme">A motivated and passionate student with a strong foundation in Biology and a growing expertise in Web Development. Currently pursuing HSC Part 1 and advancing my knowledge through a comprehensive course in Web 3.0, Metaverse, and Artificial Intelligence. I am eager to apply my technical skills and learnings in real-world projects, while continuously expanding my knowledge in cutting-edge technologies. Known for my adaptability, quick learning, and dedication to achieving excellence in both academics and technical pursuits.</h6>
+            </div>
+            </div>
+            <div class="contact-info">
+                <p class="contact-label">Email  </p>
+                <p class="contact-detail"><a href="ghaniyaakhann08@gmail.com">ghaniyaakhann08@gmail.com</a></p>
+        
+                <p class="contact-label">LinkedIn</p>
+                <p class="contact-detail"><a href="https://www.linkedin.com/in/ghaniya-khan-138919308" target="_blank">ghaniya-khan</a></p>
+        
+                <p class="contact-label">Phone</p>
+                <p class="contact-detail"><a href="tel:03323118076">0332-3118076</a></p>
+            </div>
+        </div>
+
+
+        <div class="others">
+            <div>
+                <div class="Profile">
+                    <h1>Profile</h1>
+                    <h2>A motivated and passionate student with a strong foundation in Biology and a growing expertise in Web Development. Currently pursuing HSC Part 1 and advancing my knowledge through a comprehensive course in Web 3.0, Metaverse, and Artificial Intelligence. I am eager to apply my technical skills and learnings in real-world projects, while continuously expanding my knowledge in cutting-edge technologies. Known for my adaptability, quick learning, and dedication to achieving excellence in both academics and technical pursuits.</h2>
+                </div>
+                <hr>
+                <div class="personalinfo">
+                    <h1 >Personal Information</h1>
+                    <ul>
+                        <li> Age: 17</li> 
+                        <li>Date of Birth: 8 November 2006</li>
+                        <li>Nationaltiy: Pakistani</li>
+                        <li>Gender: Felmale</li>
+                        <li>Metriat status: Single</li>
+                        <li>Province: Sindh</li>
+                        <li>City: Karachi</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="contact">
+                    <h1 >Contact me</h1>
+                    <ul>
+                        <li><pre><i class="fa-solid fa-phone"></i>  0332-3118076</pre></li> 
+                        <li><pre><i class="fa-solid fa-paper-plane"></i> ghaniaakhann08@gmail.com</pre></li>
+                        <li><pre><i class="fa-solid fa-house-chimney"></i>  Pakistan</pre></li>
+                        <li><pre><i class="fa-solid fa-house-chimney"></i>  Karachi</pre></li>
+                    </ul>
+                </div>
+            </div>
+           
+           <div>
+            <div class="education">
+                <h1>Education & Learning</h1>
+                <h2>Higher Secondary Certificate Part 1</h2>
+                <ul>
+                    <li>Al Noor Degree College</li>
+                    <li>2024 – Present</li>
+                </ul>
+                <hr>
+                <h2>Secondary School Certificate in Biology</h2>
+                <ul>
+                    <li>Public School and College</li>
+                    <li>2022 – 2024</li>
+                </ul>
+                <hr>
+                <h2>Certifications or Courses:</h1>
+                <ul>
+                <li>Web 3.0, Metaverse, and Artificial Intelligence</li>
+                <li>GIAIC</li>
+                <li>2024 – Present</li>
+            </ul>
+            <hr>
+            </div>
+            <div id="skills" class="skills">
+                <h1>Skills</h1>
+               <div class="ullllll">
+                <div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Nextjs</li>
+                        <li>Tailwind CSS</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>UI design</li>
+                        <li>Typescript</li>
+                        <li>Javascript</li>
+                        <li>Shadcn ui</li>
+                        <li>Ms Word</li>
+                    </ul>
+                </div>
+               </div>
+               
+               </div>
+               <button id="toggle-skills">Toggle Skills</button>
+           </div>
+        </div>
+    </div>
+
+<hr>
+
+<h1 id="h1make">𝐌𝐚𝐤𝐞 𝐲𝐨𝐮𝐫 𝐨𝐰𝐧 𝐑𝐞𝐬𝐮𝐦𝐞</h1>
+    <div class="<strong></strong>">
         <form id="resumeForm">
-            <div class="personal"><strong>Personal Info</strong></div>
-            <label class="inputname" id="upload" for="picture"><strong>Upload Picture:</strong></label>
-            <input class="forpic" type="file" id="picture" name="picture" accept="image/* required"><br><br>
-            <label class="inputname" for="name"><strong>Name:</strong></label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label class="inputname" for="phone"><strong>Phone Number:</strong></label>
-            <input type="tel" id="phone" name="phone" required><br><br>
-            <label class="inputname" for="email"><strong>Email:</strong></label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label class="inputname" for="address"><strong>Address:</strong></label>
-            <textarea id="address" name="address" required></textarea><br><br>
-            <div class="personal"><strong>Skills</strong></div>
-            <label class="inputname" for="skills"><strong>Skills:</strong></label>
-            <input type="text" id="skills" name="skills" required><br><br>
-            <div class="personal"><strong>Education</strong></div>
-            <label class="inputname" for="education"><strong>Education:</strong></label>
-            <textarea id="education" name="education" required></textarea><br><br>
-            <div class="personal"><strong>Experience</strong></div>
-            <label class="inputname" for="experience"><strong>Work Experience:</strong></label>
-            <textarea id="experience" name="experience" required></textarea><br><br>
-            <input class="inputname" type="submit" value="Generate Resume">
+            <div class="alladded">
+                <!-- name -->
+                <div class="nwp">
+                    <label class="inputname" for="name"><strong>Name:</strong></label>
+                    <input type="text" id="name" name="name" required placeholder="Enter Your Name"><br><br>
+                    <!-- work -->
+                    <label class="inputname" for="work"><strong>Proffession:</strong></label>
+                    <input type="text" id="work" name="work" required placeholder="Enter Your Work"><br><br>
+                    <!-- pic -->
+                    <label class="inputname" id="upload" for="picture"><strong>Upload Picture:</strong></label>
+                    <input class="forpic" type="file" id="picture" required name="picture" accept="image/*"><br><br>
+                    <!-- email -->
+                    <label class="inputname" for="email"><strong>Email:</strong></label>
+                    <input type="email" id="email" name="email" required placeholder="Enter Your Email Address"><br><br>
+                </div>
+    
+                <div class="psn">
+                    <!-- age -->
+                    <label class="inputname" for="age"><strong>Age:</strong></label>
+                    <input type="number" id="age" name="age" required placeholder="Enter Your Age"><br><br>
+    
+                    <!-- dob -->
+                    <label for="dob"><strong>Date of Birth: </strong></label>
+                    <input type="date" id="dob" name="dob" aria-required="true"><br><br>
+    
+                    <!-- gender -->
+                    <label for="gender"><strong>Gender: </strong></label>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="Male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="Female"><br><br>
+    
+                    <!-- marital status -->
+                    <label for="metriat"><strong>Marital Status: </strong></label>
+                    <label for="single">Single</label>
+                    <input type="radio" name="metriat" id="single" value="Single">
+                    <label for="married">Married</label>
+                    <input type="radio" name="metriat" id="married" value="Married"><br><br>
+    
+                    <!-- city -->
+                    <label for="city"><strong>City: </strong></label>
+                    <select name="city" id="city">
+                        <option value="Karachi">Karachi</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Lahore">Lahore</option>
+                    </select><br><br>
+                </div>
+    
+                <div class="contacttt">
+                    <!-- phone -->
+                    <label class="inputname" for="phone"><strong>Phone Number:</strong></label>
+                    <input type="number" id="phone" name="phone" required placeholder="Phone Number"><br><br>
+                    <!-- address -->
+                    <label class="inputname" for="address"><strong>Address:</strong></label>
+                    <input type="text" id="address" name="address" required placeholder="Enter Your Address"></input><br><br>
+    
+                    <!-- province -->
+                    <label for="province"><strong>Province:</strong></label>
+                    <select name="province" id="province">
+                        <option value="sindh">Sindh</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="kpk">KPK</option>
+                        <option value="balochistan">Balochistan</option>
+                    </select><br><br>
+    
+                    <label for="linkedin"><strong>LinkedIn URL:</strong></label>
+                    <input type="url" name="linkedin" id="linkedin"><br><br>
+                </div>
+    
+                <div class="edu">
+                    <!-- higher education -->
+                    <label class="inputname" for="hsc"><strong>Higher Secondary College:</strong></label>
+                    <input type="text"id="hsc" name="hsc" required placeholder="Enter Your College Name"></input><br><br>
+                    <label for="hscYear"><strong>Year: </strong></label>
+                    <input type="number" id="hscYear" name="hscYear" placeholder="Enter Year"><br><br>
+    
+                    <!-- secondary education -->
+                    <label class="inputname" for="ssc"><strong>Secondary School:</strong></label>
+                    <input type="text"id="ssc" name="ssc" required placeholder="Enter Your School Name"></input><br><br>
+                    <label for="sscYear"><strong>Year: </strong></label>
+                    <input type="number" id="sscYear" name="sscYear" placeholder="Enter Year"><br><br>
+                </div>
+    
+                <div class="compp">
+                    <!-- skills -->
+                    <div class="personal"><strong>Skills</strong>
+                    <input type="text" id="skill" name="skill" required placeholder="Enter Your Skills"><br><br></div>
+    
+                    <!-- certifications -->
+                    <label class="inputname" for="coc"><strong>Certifications or Courses:</strong></label>
+                    <input type="text" id="coc" name="coc" required placeholder="Enter Your Course Name"></input><br><br>
+                    <label class="inputname" for="coc"><strong>Institute Name:</strong></label>
+                    <input type="text" id="cocInstitute" name="cocInstitute" required placeholder="Enter Your Institute Name"></input><br><br>
+                    <label for="cocYear"><strong>Year: </strong></label>
+                    <input type="number" id="cocYear" name="cocYear" placeholder="Enter Year"><br><br>
+                </div>
+                <div class="profilee">
+                    <label for="experience"><strong>Year of Experience:</strong></label>
+                    <input type="number" id="expyear" name="exp" required placeholder="Enter Your Age"><br><br>
+                    <label for="experience"><strong>Industry/Field:</strong></label>
+                    <input type="text" id="indystryy" name="experience" required placeholder="Enter Your Industry/Field"><br><br>
+                    <label for="experience"><strong>Qualification:</strong></label>
+                    <input type="text" id="qualification" name="qualification" required placeholder="Enter Your Qualification "><br><br>
+                </div>
+        
+            </div>
         </form>
     </div>
-    <div id="resume">
-        <h3 style="color: brown;">Click Your Skills, Education, and Experience to add more info:</h3>
-        <h1 class="resumeinfo">Personal Info</h1>
-        <img id="displayPicture">
-        <h2 id="displayName"></h2>
-        <p id="displayPhone"></p>
-        <p id="displayEmail"></p>
-        <p id="displayAddress"></p>
-        <h1 class="resumeinfo">Skills</h1>
-        <p id="displaySkills" contenteditable="true"></p>
-        <h1 class="resumeinfo">Education</h1>
-        <p id="displayEducation" contenteditable="true"></p>
-        <h1 class="resumeinfo">Experience</h1>
-        <p id="displayExperience" contenteditable="true"></p>
-    </div>
+    <button class="genor" id="generateBtn" type="button">Generate Resume</button>
+    <div id="generatedResume"></div>
+    <button id="buttonpdf" class="buttonprint" onclick="printCV()">Download as PDF</button> 
     <script src="main.js"></script>
-</body>
+</body>  
 </html>

@@ -1,152 +1,662 @@
-body {
+body{
     font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #fff8f0;
+
+background-color: white;
+padding: 20px;
 }
-.heading{
-    color: #92140c;
-    font-size:xx-large ;
+html{
+    scroll-behavior: smooth;
+}
+
+.mainnav{
+    background-color: purple;
+    margin-top: -50px;
+    margin-right: -28px;
+    margin-left: -28px;
+    height: 60px;
+    margin-bottom: 50px;
+}
+.mainnav .navv {
+    display: flex;
+    justify-content: space-around;
+}
+.mainnav .navv h1 {
+    color: white;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+.mainnav .navv ul{
+    display: flex;
+    gap: 50px;
+    color: azure;
+    font-size: x-large;
+    list-style: none;
+    cursor: pointer;
+}
+.maindivforall{
+   width: 1000px;
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 15px;
+   border: 1px solid #9aa6aa; 
    text-align: center;
-   margin-top: 30px;
-   margin-bottom: 30px;
+   margin-bottom: 100px;
+   border-radius: 1px;
+   box-shadow: #9aa6aa;
+   box-shadow: 4px 4px 15px rgba(211, 140, 227, 0.2); 
+   margin-top: 50px;
+}
+.formain{
+    background-color: rgb(243, 216, 243);
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+    padding-top: 40px;
+    margin-top: -10px;
+    height: 250px;
+    
+}
+/* .forpic {
+    border-radius: 50%;
+    width: 170px;
+    height: 120px;
+} */
+.headings{
+    display: flex;
+    gap: 50px;
+}
+.headings img{
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin-left: -0px;
+}
+.forheadings{
+    font-size: x-large;
+    font-weight: bold;
+    text-align: left;
+}
+.forheadings .h1dev{
+    color: purple;
+    font-size: xx-large;
+    margin-top: -30px;
+}
+.paraforme{
+    margin-left: -200px;
+    margin-top: 25px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: purple;
+}
+.paraformetsss{
+    margin-left: -200px;
+    margin-top:120px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: purple;
+}
+.contact-info {
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    line-height: 1.6;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.contact-label {
+    color: purple;
+    font-weight: bold;
+    margin-bottom: -20px; /* Reduced margin for a tighter layout */
+}
+
+.contact-detail a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-detail a:hover {
+    text-decoration: underline;
+}
+
+.contact-detail {
+    margin-bottom: -10px; 
+}
+.others{
+    display: flex;
+    justify-content: space-between;
+    margin-left:  30px;
+    margin-right: 90px;
+    gap: 50px;
+    font-size: small;
+    text-align: left;
+}
+.others .Profile h1{
+    color: purple;
+    font-size: x-large;
+}
+.others .Profile h2{
+    font-size: small;
+    font-weight: normal;
+    max-width: 500px;
+    margin-left: 20px;
+    color: rgb(79, 23, 79);
+}
+.others .personalinfo h1{
+    color: purple;
+    font-size: x-large;
+}
+.others .personalinfo ul{
+    list-style: none;
+    text-align: left;
+    margin-left: -20px;
+    color: rgb(79, 23, 79);
+}
+.others .contact h1{
+    color: purple;
+    font-size: x-large;
+}
+
+.others .contact ul{
+    list-style: none;
+    text-align: left;
+    margin-left: -20px;
+    color: rgb(79, 23, 79);
+    font-size: small;
+}
+.others .contact ul .fa-solid{
+    font-size: large;
+}
+.others .education h1{
+    color: purple;
+    font-size: x-large;
+}
+.others .education h2{
+    color: rgb(166, 74, 166);
+    font-size: medium;
+}
+.others .education ul{
+    list-style: none;
+    text-align: left;
+    margin-left: -20px;
+    color: rgb(79, 23, 79);
+    font-size: small;
+}
+.others .skills h1{
+    color: purple;
+    font-size: x-large;
+}
+.others .skills ul{
+    
+    list-style: none;
+    text-align: left;
+    margin-left: -20px;
+    color: rgb(79, 23, 79);
+    font-size: small;
+}
+.others .skills .ullllll{
+    display: flex;
+    gap: 22px;
+    margin-top: -20px;
+}
+button{
+    background-color: plum;
+    border-radius: 20px;
+    width: 110px;
+    height: 30px;
+    border-color: plum;
+    border: #000;
+}
+.alladded{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
 }
 .mainn{
-    max-width: 800px;
-    margin: 0 auto;
-    background-image: url(https://th.bing.com/th/id/OIF.NB9fiwe0yRMPccLGAI1BGQ?rs=1&pid=ImgDetMain);
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    margin-bottom: 100px;
+    margin-top: 100px;
 }
-.personal{
-    color: #92140c;
-    background-color: #ffcf99;
+.nwp{
+    box-shadow: 4px 4px 15px rgba(128, 57, 144, 0.2); 
+    width: 450px;
+    height: 250px;
+    color: purple;
     text-align: center;
-    padding: 15px;
-    font-size: x-large;
-}
-.inputname{
-    color: #92140c;
-    font-size: larger;
-    margin-left: 20px;
+    border: 1px solid #9aa6aa;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
     padding-top: 30px;
-    text-decoration:solid;
+    margin-left: 160px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 30px;
 }
-.forpic{
-    color: #92140c;
-}
-input[type="file"]{
-    font-size: 16px;
-    padding: 10px;
-    width: 250px;
-    background-color:#ffcf99 ;
+.psn{
+    box-shadow: 4px 4px 15px rgba(128, 57, 144, 0.2); 
+    width: 450px;
+    height: 250px;
+    color: purple;
+    text-align: center;
+    padding-right: 30px;
+    border: 1px solid #9aa6aa;
     border-radius: 30px;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+.contacttt{
+    box-shadow: 4px 4px 15px rgba(128, 57, 144, 0.2); 
+    width: 480px;
+    height: 250px;
+    color: purple;
+    border: 1px solid #9aa6aa;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 30px;
+    margin-left: 160px;
+    text-align: left;
+    padding-left: 20px;
+}
+.edu{
+    box-shadow: 4px 4px 15px rgba(128, 57, 144, 0.2); 
+    width: 480px;
+    height: 250px;
+    color: purple;
+    text-align: center;
+    border: 1px solid #9aa6aa;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+.compp{
+    box-shadow: 4px 4px 15px rgba(128, 57, 144, 0.2); 
+    width: 480px;
+    height: 250px;
+    color: purple;
+    text-align: center;
+    border: 1px solid #9aa6aa;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 30px;
+    margin-left: 160px;
+    text-align: left;
+    padding-left: 20px;
+}
+.profilee{
+    box-shadow: 4px 4px 15px rgba(128, 57, 144, 0.2); 
+    width: 480px;
+    height: 250px;
+    color: purple;
+    text-align: center;
+    border: 1px solid #9aa6aa;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
 
-}
-input[type="file"]::file-selector-button{
-    background-color:#92140c;
-    cursor: pointer;
-    font-size: large;
-    color: white;
-    border-color: #92140c;
-    border-radius: 10px;
-}
-input[type="file"]::file-selector-button:hover{
-    background-color: #c2ad8194;
-}
-input[type="submit"]{
+input[type="text" ]{
     
-    border-radius: 30px;
-    background-color: #92140c;
-    color: white;
-    font-size: x-large;
+    border-radius: 5px;
+    border: 1px solid purple;
+    color:purple;
+    font-size: 15px;
     padding-bottom: 20px;
 }
-form {
-    margin-bottom: 40px;
+input[type="email" ]{
+    
+    border-radius: 5px;
+    border: 1px solid purple;
+    color:purple;
+    font-size: 15px;
+    padding-bottom: 20px;
 }
-
-input, textarea {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 8px;
-    font-size: 14px;
-    border-color: #92140c;
-    border-width: 3px;
+input[type="number" ]{
+     border-radius: 5px;
+    border: 1px solid purple;
+    color:purple;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+input[type="url" ]{
+    border-radius: 5px;
+   border: 1px solid purple;
+   color:purple;
+   font-size: 15px;
+   padding-bottom: 20px;
+}
+textarea{
+    border-radius: 5px;
+    border: 1px solid purple;
+    color:purple;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+select{
+    border-radius: 5px;
+    border: 1px solid purple;
+    color: purple;
+    font-size: 15px;
+    padding: 10px; /* Adjust padding */
+    background-color:white;
+}
+input[type="file"]::file-selector-button{
+    background-color:white;
+    cursor: pointer;
+    font-size: 15px;
+    color: purple;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+input[type="date" ]{
+    border-radius: 5px;
+   border: 1px solid purple;
+   color: purple;
+   font-size: 15px;
+   padding-bottom: 20px;
+}
+#h1make{
+    font-size: xx-large ;
+    font-weight: bold;
+    text-align: center;
+    color: purple;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.genor{
+    background-color: purple;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    margin-left: 600px;
+    margin-top: 50px;
+}
+.boxforpro{
+    width: 440px;
+    margin-top: 10px;
+    height: 180px;
+}
+#newSkillInput{
+    width: 70px;
+}
+#buttonpdf{
+    background-color: purple;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    margin-left: 600px;
+    margin-top: 50px;
+}
+@media only screen and (max-width : 600px){
+.body{padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}    
+.maindivforall{
+    max-width: 280px;
+    margin-left: 5px ;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding: 4px;
+}
+.formain{
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: -10px;
+    height:220px;
     
 }
-
-#resume{
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-    border: 3px solid #92140c;
-    color: #92140c;
-    padding: 20px;
-    border-radius: 8px;
-    background-image: url(https://i.pinimg.com/736x/1d/3b/91/1d3b9104c9214dd258807cdd8d3192b8.jpg);
-}
-.resumeinfo{
-    background-color: beige;
-    color: #92140c;
-    text-align: center;
-}
-
-h2, p {
-    margin: 10px 0;
-}
-
-img {
-    max-width: 150px;
-    border-radius: 50%;
+.headings img{
+    width: 200px;
     height: 100px;
+    margin-left: -7px;
+}
+.forheadings{
+    font-size: 12px;
+    text-align: left;
+    margin-left: -40px;
+}
+.forheadings .h1dev{
+    color: purple;
+    font-size: 23px;
+    padding-top: 10px;
+}
+.contact-info{
+   display: none;
+}
+.others{
+    font-size: small;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    gap:19px;
+    justify-content: space-between;
+}
+.others .Profile h1{
+    font-size: 15px;
+}
+.others .Profile h2{
+    font-size: 9px;
+    margin-left: 0;
+    margin-top: -8px;
+    max-width: 170px;
+}
+.others .personalinfo h1{
+    font-size: 15px;
+}
+.others .personalinfo ul{
+    font-size: 8px;
+    text-align: left;
+    margin-left: -40px;
+    margin-top: -6px;
+}
+.others .contact h1{
+    font-size: 13px;
+}
+.others .contact ul{
+    font-size: 8px;
+    text-align: left;
+    margin-left: -40px;
+    margin-top: -6px;
+}
+.others .contact ul .fa-solid{
+    display: none;
+}
+.others .education h1{
+    font-size: 13px;
+}
+.others .education h2{
+    font-size: 10px;
+    margin-top: -5px;
+}
+.others .education ul{
+    font-size: 8px;
+    text-align: left;
+    margin-left: -40px;
+    margin-top: -6px;
+}
+.others .skills h1{
+    font-size: 13px;
+}
+.others .skills ul{
+    font-size: 8px;
+    text-align: left;
+    margin-left: -40px;
+    margin-top: 15px;
+}
+button{
+    font-size: 10px;
+    width: 80px;
+    color:white;
+}
+#h1make{
+    font-size: large ;
+    font-weight: bold;
+    text-align: center;
+    color: purple;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.alladded{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+}
+.nwp{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    padding-top: 20px;
+    margin-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 11px;
+}
+.profilee{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    padding-top: 20px;
+    margin-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 11px;
+}
+.edu{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    padding-top: 20px;
+    margin-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 11px;
+}
+.contacttt{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    padding-top: 20px;
+    margin-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 11px;
+}
+.psn{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    padding-top: 20px;
+    margin-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 11px;
+}
+.compp{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    padding-top: 20px;
+    margin-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 11px;
+}
+input[type="text" ]{
+    font-size: 8px;
+    padding-bottom: 15px;
+}
+input[type="email" ]{ 
+    font-size: 8px;
+    padding-bottom: 15px;
+}
+input[type="number" ]{
+   font-size: 8px;
+   padding-bottom: 15px;
+}
+input[type="url" ]{
+   font-size: 8px;
+   padding-bottom: 15px;
+}
+textarea{
+    font-size: 8px;
+    padding-bottom: 15px;
+}
+select{
+    font-size: 8px;
+    padding: 10px; 
+}
+input[type="file"]::file-selector-button{
+    font-size: 9px;
+}
+input[type="date" ]{
+   font-size: 8px;
+   padding-bottom: 15px;
+}
+#buttonpdf{
+    margin-left: 50px;
+}
+.genor{
+    margin-left: 50px;
+}
+.mainnav{
+    width: 355px;
+    position: fixed;
+    padding-right: -30px;
+    gap: 10px;
+}
+.mainnav .navv h1{  
+    font-size: 15px;
+    margin-top: 35px;
+}
+
+.mainnav .navv ul{
+    display: flex;
+    gap:10px;
+    font-size: 13px;
+    margin-top: 35px;
+}
+.headings img{
     width: 100px;
+    height: 100px;
 }
-
-#workSkill{
-    font-size: x-large;
-
+.paraforme{
+    font-size: 9px;
+    padding-top: 18px;
+    padding: 90px;
+    padding-left: 0px;
+    margin-top: -70px;
+    margin-left: -50px;
+    color: purple;
+    margin-right: -60px ;
 }
-
-@media (max-width: 600px) {
-    /* Adjusting padding and font size for smaller screens */
-    body {
-        margin: 10px;
-    }
-
-    form {
-        padding: 15px;
-        margin-bottom: 20px;
-    }
-
-    input, textarea {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    img {
-        max-width: 100px;
-    }
-    input[type="submit"]{
-        padding: auto;
-    }
-    #resume{
-        padding: 15px;
-        margin-bottom: 20px;
-        margin-left: -3px;
-    }
+.paraformetsss{
+    margin-left:-100px;
+    margin-top:100px;
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: purple;
+}
 
 }

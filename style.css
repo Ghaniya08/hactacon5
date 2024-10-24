@@ -602,6 +602,66 @@ textarea{
     font-size: 8px;
     padding-bottom: 15px;
 }
+    #name{
+    width: 330px;
+}
+#work{
+    width: 285px;
+}
+#email{
+    width: 270px;
+}
+#phone{
+    width: 270px;
+}
+#address{
+    width: 320px;
+}
+#linkedin{
+    width: 280px;
+}
+#province{
+    width: 325px;
+}
+#skill{
+    width: 350px;
+}
+#cocInstitute{
+    width: 270px;
+}
+#cocYear{
+    width: 345px;
+}
+#age{
+    width: 315px;
+}
+#dob{
+    width: 253px;
+}
+#city{
+    width: 320px;
+}
+#hsc{
+    width: 145px;
+}
+#hscYear{
+    width: 310px;
+}
+#ssc{
+    width: 205px;
+}
+#sscYear{
+    width: 310px;
+}
+#expyear{
+    width: 205px;
+}
+#indystryy{
+    width: 245px;
+}
+#qualification{
+    width: 255px;
+}
 select{
     font-size: 8px;
     padding: 10px; }
@@ -651,5 +711,68 @@ input[type="date" ]{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: purple;
+}
+    #name{
+    width: 155px;
+}
+#work{
+    width: 125px;
+}
+#email{
+    width: 155px;
+}
+#phone{
+    width: 105px;
+}
+#address{
+    width: 140px;
+}
+#linkedin{
+    width: 115px;
+}
+#province{
+    width: 145px;
+}
+#skill{
+    width: 155px;
+}
+#cocInstitute{
+    width: 105px;
+}
+#coc{
+    width: 50px;
+}
+#cocYear{
+    width: 160px;
+}
+#age{
+    width: 165px;
+}
+#dob{
+    width: 123px;
+}
+#city{
+    width: 170px;
+}
+#hsc{
+    width: 45px;
+}
+#hscYear{
+    width: 160px;
+}
+#ssc{
+    width: 85px;
+}
+#sscYear{
+    width: 160px;
+}
+#expyear{
+    width: 85px;
+}
+#indystryy{
+    width: 110px;
+}
+#qualification{
+    width: 115px;
 }
 }

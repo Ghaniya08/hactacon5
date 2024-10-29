@@ -149,7 +149,12 @@ document.getElementById('generateBtn')?.addEventListener('click', function () {
             
         </div>
     `;
-
+ if (!name || !work || !picture || !email || !age || !dobb || !phone || !linkdin || !hsc || !yearhsc || !ssc || !yearssc || !skills || !courname || !courinst || !coyear || !yearofexp || !feild || !qualication) {
+        alert("Please fill in all the fields before generating the resume.");
+    } else {
+        // Call function to generate the resume (if all fields are filled)
+        generatedResume;
+    }
     (document.getElementById('generatedResume') as HTMLElement).innerHTML = generatedResume;
 
 

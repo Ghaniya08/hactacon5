@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +13,7 @@
             <h1>Ghaniya Khan</h1>
             <ul>
                 <li><a href="#okok" style="color: white; text-decoration: none;">My Resume</a></li>
-                <li> <a href="#h1make" style="color: white; text-decoration: none;">Generate your </a></li>
+                <li> <a href="#h1make" style="color: white; text-decoration: none;">Genorate your </a></li>
             </ul>
         </nav>
     </div>
@@ -127,13 +126,13 @@
 <hr>
 
 <h1 id="h1make">𝐌𝐚𝐤𝐞 𝐲𝐨𝐮𝐫 𝐨𝐰𝐧 𝐑𝐞𝐬𝐮𝐦𝐞</h1>
-    <div class="<strong></strong>">
+    <div class="maindiv">
         <form id="resumeForm">
-            <div class="alladded">
+            <!-- <div class="alladded"> -->
                 <!-- name -->
                 <div class="nwp">
                     <label class="inputname" for="name"><strong>Name:</strong></label>
-                    <input type="text" id="name" name="name" required placeholder="Enter Your Name"><br><br>
+                    <input  type="text" id="name" name="name" required placeholder="Enter Your Name"><br><br>
                     <!-- work -->
                     <label class="inputname" for="work"><strong>Proffession:</strong></label>
                     <input type="text" id="work" name="work" required placeholder="Enter Your Work"><br><br>
@@ -143,9 +142,9 @@
                     <!-- email -->
                     <label class="inputname" for="email"><strong>Email:</strong></label>
                     <input type="email" id="email" name="email" required placeholder="Enter Your Email Address"><br><br>
-                </div>
+              
     
-                <div class="psn">
+              
                     <!-- age -->
                     <label class="inputname" for="age"><strong>Age:</strong></label>
                     <input type="number" id="age" name="age" required placeholder="Enter Your Age"><br><br>
@@ -156,17 +155,18 @@
     
                     <!-- gender -->
                     <label for="gender"><strong>Gender: </strong></label>
-                     <input type="radio" name="gender" id="male" value="Male">
-                    <label for="male">Male</label>
+                    <input  name="gender" id="male" value="Male" type="radio">
+                     <label for="male">Male</label>
                      <input type="radio" name="gender" id="female" value="Female">
-                    <label for="female">Female</label><br><br>
+                     <label for="female">Female</label><br><br>
+                   
     
                     <!-- marital status -->
                     <label for="metriat"><strong>Marital Status: </strong></label>
-                     <input type="radio" name="metriat" id="single" value="Single">
                     <label for="single">Single</label>
-                     <input type="radio" name="metriat" id="married" value="Married">
-                    <label for="married">Married</label><br><br>
+                    <input type="radio" name="metriat" id="single" value="Single">
+                    <label for="married">Married</label>
+                    <input type="radio" name="metriat" id="married" value="Married"><br><br>
     
                     <!-- city -->
                     <label for="city"><strong>City: </strong></label>
@@ -175,9 +175,7 @@
                         <option value="Islamabad">Islamabad</option>
                         <option value="Lahore">Lahore</option>
                     </select><br><br>
-                </div>
-    
-                <div class="contacttt">
+               
                     <!-- phone -->
                     <label class="inputname" for="phone"><strong>Phone Number:</strong></label>
                     <input type="number" id="phone" name="phone" required placeholder="Phone Number"><br><br>
@@ -196,9 +194,9 @@
     
                     <label for="linkedin"><strong>LinkedIn URL:</strong></label>
                     <input type="url" name="linkedin" id="linkedin"><br><br>
-                </div>
+                
     
-                <div class="edu">
+               
                     <!-- higher education -->
                     <label class="inputname" for="hsc"><strong>Higher Secondary College:</strong></label>
                     <input type="text"id="hsc" name="hsc" required placeholder="Enter Your College Name"></input><br><br>
@@ -210,9 +208,9 @@
                     <input type="text"id="ssc" name="ssc" required placeholder="Enter Your School Name"></input><br><br>
                     <label for="sscYear"><strong>Year: </strong></label>
                     <input type="number" id="sscYear" name="sscYear" placeholder="Enter Year"><br><br>
-                </div>
+               
     
-                <div class="compp">
+               
                     <!-- skills -->
                     <div class="personal"><strong>Skills</strong>
                     <input type="text" id="skill" name="skill" required placeholder="Enter Your Skills"><br><br></div>
@@ -224,8 +222,7 @@
                     <input type="text" id="cocInstitute" name="cocInstitute" required placeholder="Enter Your Institute Name"></input><br><br>
                     <label for="cocYear"><strong>Year: </strong></label>
                     <input type="number" id="cocYear" name="cocYear" placeholder="Enter Year"><br><br>
-                </div>
-                <div class="profilee">
+                
                     <label for="experience"><strong>Year of Experience:</strong></label>
                     <input type="number" id="expyear" name="exp" required placeholder="Enter Your Age"><br><br>
                     <label for="experience"><strong>Industry/Field:</strong></label>
@@ -234,7 +231,7 @@
                     <input type="text" id="qualification" name="qualification" required placeholder="Enter Your Qualification "><br><br>
                 </div>
         
-            </div>
+            <!-- </div> -->
         </form>
     </div>
     <button class="genor" id="generateBtn" type="button">Generate Resume</button>

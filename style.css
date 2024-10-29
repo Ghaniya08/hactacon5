@@ -15,6 +15,7 @@ html{
     margin-left: -28px;
     height: 60px;
     margin-bottom: 50px;
+    width: 100;
 }
 .mainnav .navv {
     display: flex;
@@ -45,6 +46,13 @@ html{
    box-shadow: #9aa6aa;
    box-shadow: 4px 4px 15px rgba(211, 140, 227, 0.2); 
    margin-top: 50px;
+}
+.maindiv{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 100px;
 }
 .formain{
     background-color: rgb(243, 216, 243);
@@ -86,7 +94,7 @@ html{
 }
 .paraformetsss{
     margin-left: -200px;
-    margin-top:70px;
+    margin-top: 40px;
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -104,7 +112,7 @@ html{
 .contact-label {
     color: purple;
     font-weight: bold;
-    margin-bottom: -20px;
+    margin-bottom: -20px; /* Reduced margin for a tighter layout */
 }
 
 .contact-detail a {
@@ -153,66 +161,6 @@ html{
 .others .contact h1{
     color: purple;
     font-size: x-large;
-}
-    #name{
-    width: 330px;
-}
-#work{
-    width: 285px;
-}
-#email{
-    width: 270px;
-}
-#phone{
-    width: 270px;
-}
-#address{
-    width: 320px;
-}
-#linkedin{
-    width: 280px;
-}
-#province{
-    width: 325px;
-}
-#skill{
-    width: 350px;
-}
-#cocInstitute{
-    width: 270px;
-}
-#cocYear{
-    width: 345px;
-}
-#age{
-    width: 315px;
-}
-#dob{
-    width: 253px;
-}
-#city{
-    width: 320px;
-}
-#hsc{
-    width: 145px;
-}
-#hscYear{
-    width: 310px;
-}
-#ssc{
-    width: 205px;
-}
-#sscYear{
-    width: 310px;
-}
-#expyear{
-    width: 205px;
-}
-#indystryy{
-    width: 245px;
-}
-#qualification{
-    width: 255px;
 }
 .others .contact ul{
     list-style: none;
@@ -265,30 +213,42 @@ button{
     border: #000;
 }
 .alladded{
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin: 0;
+    justify-content:center;
+    align-items: center;
+    
 }
 .mainn{
     margin-top: 100px;
 }
+.maindiv{
+    display: grid;
+    grid-template-columns: 150px auto; /* Label and input columns */
+    gap: 10px 15px; /* Spacing between labels and inputs */
+    max-width: 600px;
+    margin: 0 auto; /
+}
 .nwp{
     box-shadow: 4px 4px 15px rgba(128, 57, 144, 0.2); 
-    width: 450px;
-    height: 250px;
+    width: 650px;
+    height: 1350px;
     color: purple;
-    text-align: center;
-    border: 1px solid #9aa6aa;
-    border-radius: 30px;
-    align-items: center;
     justify-content: center;
-    padding: 0;
+    border: 1px solid #9aa6aa;
+    align-items: center;
     padding-top: 30px;
-    margin-left: 160px;
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
 }
+.nwp label {
+        text-align: right;
+}
+
 .psn{
     box-shadow: 4px 4px 15px rgba(128, 57, 144, 0.2); 
     width: 450px;
@@ -366,17 +326,78 @@ button{
     text-align: left;
     padding-left: 20px;
 }
-
+#name{
+    width: 330px;
+}
+#work{
+    width: 285px;
+}
+#email{
+    width: 330px;
+}
+#phone{
+    width: 270px;
+}
+#address{
+    width: 320px;
+}
+#linkedin{
+    width: 280px;
+}
+#province{
+    width: 325px;
+}
+#skill{
+    width: 330px;
+}
+#cocInstitute{
+    width: 280px;
+}
+#cocYear{
+    width: 360px;
+}
+#age{
+    width: 345px;
+}
+#dob{
+    width: 285px;
+}
+#city{
+    width: 353px;
+}
+#hsc{
+    width: 184px;
+}
+#hscYear{
+    width: 350px;
+}
+#ssc{
+    width: 245px;
+}
+#sscYear{
+    width: 350px;
+}
+#expyear{
+    width: 250px;
+}
+#indystryy{
+    width: 285px;
+}
+#qualification{
+    width: 295px;
+}
+#skill{
+    width:345px;
+}
 input[type="text" ]{
-    
     border-radius: 5px;
     border: 1px solid purple;
     color:purple;
     font-size: 15px;
     padding-bottom: 20px;
+    width: 200px;
 }
 input[type="email" ]{
-    
     border-radius: 5px;
     border: 1px solid purple;
     color:purple;
@@ -471,7 +492,7 @@ input[type="date" ]{
     align-items: center;
 }    
 .maindivforall{
-    max-width: 280px;
+    max-width: 300px;
 }
 .formain{
     padding-left: 10px;
@@ -515,6 +536,7 @@ input[type="date" ]{
     margin-top: -8px;
     max-width: 170px;
 }
+
 .others .personalinfo h1{
     font-size: 15px;
 }
@@ -571,22 +593,19 @@ button{
     margin-bottom: 50px;
     margin-top: 30px;
 }
-.alladded{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
+#resumeForm{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
 }
 .nwp{
     width: 200px;
     height: 200px;
     padding: 0;
     padding-top: 20px;
-    margin-left: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
     font-size: 11px;
 }
-.profilee{
+/* .profilee{
     width: 200px;
     height: 200px;
     padding: 0;
@@ -595,8 +614,8 @@ button{
     padding-left: 15px;
     padding-right: 15px;
     font-size: 11px;
-}
-.edu{
+} */
+/* .edu{
     width: 200px;
     height: 200px;
     padding: 0;
@@ -635,7 +654,7 @@ button{
     padding-left: 15px;
     padding-right: 15px;
     font-size: 11px;
-}
+} */
 input[type="text" ]{
     font-size: 8px;
     padding-bottom: 15px;
@@ -658,37 +677,37 @@ textarea{
 }
 select{
     font-size: 8px;
-    padding: 10px; }
+    padding: 10px; 
+}
 input[type="file"]::file-selector-button{
-    font-size: 9px;}
+    font-size: 9px;
+}
 input[type="date" ]{
    font-size: 8px;
-   padding-bottom: 15px;}
+   padding-bottom: 15px;
+}
 #buttonpdf{
-    margin-left: 50px;}
+    margin-left: 50px;
+}
 .genor{
-    margin-left: 50px;}
-.mainnav {
-    width: auto;
-    overflow: hidden;
+    margin-left: 50px;
 }
-.mainnav .navv{
-    width: auto;
-    padding-right: -30px;
-    gap: 10px;
-    padding-left: 20px;
-}
+
 .mainnav .navv h1{  
     font-size: 15px;
-    margin-top: 35px;}
+    margin-top: 35px;
+}
+
 .mainnav .navv ul{
     display: flex;
     gap:10px;
     font-size: 13px;
-    margin-top: 35px;}
+    margin-top: 35px;
+}
 .headings img{
     width: 100px;
-    height: 100px;}
+    height: 100px;
+}
 .paraforme{
     font-size: 9px;
     padding-top: 18px;
@@ -697,16 +716,17 @@ input[type="date" ]{
     margin-top: -70px;
     margin-left: -50px;
     color: purple;
-    margin-right: -60px ;}
+    margin-right: -60px ;
+}
 .paraformetsss{
-    margin-left:-65px;
-    margin-top:70px;
+    margin-left:-90px;
+    margin-top:120px;
     font-size: 9px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: purple;
 }
-    #name{
+#name{
     width: 155px;
 }
 #work{
@@ -769,4 +789,5 @@ input[type="date" ]{
 #qualification{
     width: 115px;
 }
+
 }

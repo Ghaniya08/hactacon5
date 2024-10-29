@@ -15,7 +15,7 @@ html{
     margin-left: -28px;
     height: 60px;
     margin-bottom: 50px;
-    width: 100;
+    width: 100%;
 }
 .mainnav .navv {
     display: flex;
@@ -601,7 +601,7 @@ button{
 .nwp{
     width: 260px;
      /* margin-left: 15px; */
-    height: 950px;
+    height: 980px;
     margin: 0;
     padding: 0;
     padding-top: 20px;

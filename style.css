@@ -492,7 +492,16 @@ input[type="date" ]{
     align-items: center;
 }    
 .maindivforall{
-    max-width: 300px;
+   .maindivforall{
+    max-width: 270px;
+    /* margin-left: -9px ;
+    margin-right: -9px; */
+    overflow-y: auto;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 }
 .formain{
     padding-left: 10px;
